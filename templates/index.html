@@ -1,0 +1,51 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}"/>
+ <title>Prueba modelo</title>	
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>IASTR</h1>
+			</div>
+			<nav class="menu">
+				<a href="#">Inicio</a>
+				
+				<a href="#">Contacto</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="#"><h2>IASTR</h2></a>
+			<a href="{{url_for('testModel')}}">Clasifica señal</a>
+			<a href="{{url_for('evaluatedModel')}}">Evalúa modelo</a>
+			<a href="{{url_for('acercaDe')}}">Acerca de</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div align="center"><img src="static/css/logo.png" alt="Avatar" style="width:200px"></div>
+<br />
+</div>
+<div class="presentacion">
+	El trabajo que se presenta a continuación consiste en el desarrollo de un sistema que funcione como herramienta para evaluar un conjunto de modelos de aprendizaje profundo previamente pre-entrenados, con el fin de determinar cuál es el mejor modelo para las aplicaciones de clasificación de señales de tránsito.
+</div>
+</body>
+</html>
